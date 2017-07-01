@@ -3,7 +3,6 @@
     padding: 0
 }
 
-<<<<<<< HEAD
 html {
     height: 100%;
 }
@@ -14,15 +13,6 @@ body {
     height: 100%;
     background: #ddd;
     overflow-y: scroll;
-=======
-body,
-html {
-    height: 100%
-}
-
-body {
-    background: #ddd;
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     color: #505050;
     letter-spacing: .01em;
     font-size: 14px;
