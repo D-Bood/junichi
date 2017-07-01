@@ -14,7 +14,14 @@
 				<div class="entry-content" itemprop="articleBody">
 					<?php parseContent($this); ?>
 					<p class="post-info">
+<<<<<<< HEAD
 						最后更新于&nbsp;<span class="date"><?php echo date('Y-m-d  H:i:s' , $this->modified); ?></span>&nbsp;，阅读数： <?php get_post_view($this) ?>
+=======
+						最后更新于&nbsp;<span class="date"><?php echo date('Y-m-d  H:i:s' , $this->modified); ?></span>&nbsp;并被添加「<?php $this->tags(' ', true, ''); ?>」标签，已有 <?php get_post_view($this) ?> 位童鞋阅读过。
+					</p>
+					<p class="copyright-info">
+						本站使用「<a target="_blank" href="http://creativecommons.org/licenses/by/4.0/deed.zh">署名 4.0 国际</a>」创作共享协议，可自由转载、引用，但需署名作者且注明文章出处</a>
+>>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 					</p>
 					<p>
 						<?php $this->related(5)->to($relatedPosts); ?>
@@ -26,7 +33,11 @@
 							<?php endwhile; ?>
 						</ul>
 						<?php endif; ?>					
+<<<<<<< HEAD
 					</p>
+=======
+					</p>					
+>>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 				</div>
 				</article>
 				<nav class="page-navi"><span class="prev"><?php $this->thePrev('&laquo; %s', ''); ?></span> <span class="next"><?php $this->theNext('%s &raquo;', ''); ?></span></nav>
