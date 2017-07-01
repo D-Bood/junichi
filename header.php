@@ -9,10 +9,7 @@
 <meta http-equiv="Cache-Control" content="no-transform"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
 <meta name="keywords" content="<?php $this->keywords() ?>" />
-<<<<<<< HEAD
 <script src="//at.alicdn.com/t/font_yyy0obdoyuzhncdi.js"></script>
-=======
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
 <!--[if lt IE 9]>
 	<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
@@ -34,26 +31,15 @@
 <div class="container">
     <div class="left-col" style="background-image: url(<?php if($this->options->iosicon): $this->options->iosicon(); else: $this->options->themeUrl('images/left-bg.jpg');endif; ?>);">
         <header id="header">
-<<<<<<< HEAD
             <div class="profilepic"><a href="/" style="background-image: url(<?php if($this->options->touxiang): $this->options->touxiang(); else: $this->options->themeUrl('images/touxiang.jpg');endif; ?>);"></a></div>
-=======
-            <div class="profilepic"><a href="/" style="background-image: url(<?php if($this->options->touxiang): $this->options->touxiang(); else: $this->options->themeUrl('images/touxiang.png');endif; ?>);"></a></div>
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
             <h1><a href="/"><?php $this->options->title() ?></a></h1>
             <p class="subtitle"><?php $this->options->slogan(); ?></p>
             <nav id="main-nav">
                 <ul>
-<<<<<<< HEAD
                    <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>music">音乐盒(仮)</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>archives">归档</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>about">关于</a></li>
-=======
-                   <li><a href="<?php $this->options->siteUrl(); ?>"><i class="iconfont icon-home"></i>首页</a></li>
-                   <li><a href="<?php $this->options->siteUrl(); ?>about.html"><i class="iconfont icon-aboutus"></i>关于</a></li>
-                   <li><a href="<?php $this->options->siteUrl(); ?>archives.html"><i class="iconfont icon-collect"></i>归档</a></li>
-                   <li><a href="<?php $this->options->siteUrl(); ?>links.html"><i class="iconfont icon-links"></i>友链</a></li>
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
                 </ul>
             </nav>
             <nav id="sub-nav">
@@ -64,15 +50,9 @@
                     <?php if ($this->options->socialgoogle): ?>
                     <a class="social google-plus" target="blank" href="<?php $this->options->socialgoogle(); ?>"><i class="iconfont icon-google"></i></a>
                     <?php endif; ?>
-<<<<<<< HEAD
                     <a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mes-rss"></use></svg></a>
                     <?php if ($this->options->socialtwitter): ?>
                     <a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon_twitter"></use></svg></a>
-=======
-                    <a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/"><i class="iconfont icon-rss"></i></a>
-                    <?php if ($this->options->socialtwitter): ?>
-                    <a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>"><i class="iconfont icon-twitter"></i></a>
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
                     <?php endif; ?>
                     <?php if ($this->options->socialwechat): ?>
                     <a id="wechat-toggle" class="social wechat" href="javascript:"><i class="iconfont icon-wechat"></i></a>
@@ -81,20 +61,12 @@
                     <a class="social qq" target="blank" href="tencent://message/?uin=<?php $this->options->socialqq(); ?>&Site=junichi&Menu=yes"><i class="iconfont icon-qq"></i></a>
                     <?php endif; ?>
                     <?php if ($this->options->socialweibo): ?>
-<<<<<<< HEAD
                     <a class="social weibo" target="blank" href="<?php $this->options->socialweibo(); ?>"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon_xinlang1"></use></svg></a>
-=======
-                    <a class="social weibo" target="blank" href="<?php $this->options->socialweibo(); ?>"><i class="iconfont icon-weibo"></i></a>
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
                     <?php endif; ?>
                     <?php if ($this->options->socialmusic): ?>
                     <a class="social music" target="blank" href="<?php $this->options->socialmusic(); ?>"><i class="iconfont icon-music"></i></a>
                     <?php endif; ?>
-<<<<<<< HEAD
                     <a id="search-toggle" class="social search" href="javascript:"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search1"></use></svg></a>
-=======
-                    <a id="search-toggle" class="social search" href="javascript:"><i class="iconfont icon-sousuo"></i></a>
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
                     <form id="search" method="post" action="/" role="search">
                         <input type="text" class="input" name="s" required="true" placeholder="...Search">
                     </form>

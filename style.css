@@ -58,20 +58,11 @@ a:hover {
     text-decoration: underline
 }
 
-<<<<<<< HEAD
 .icon {
     width: 2.2em; height: 2.2em;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
-=======
-@font-face {font-family: "iconfont";
-  src: url('//at.alicdn.com/t/font_7xfbg1ri4tpgb9.eot?t=1484874598852'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_7xfbg1ri4tpgb9.eot?t=1484874598852#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_7xfbg1ri4tpgb9.woff?t=1484874598852') format('woff'), /* chrome, firefox */
-  url('//at.alicdn.com/t/font_7xfbg1ri4tpgb9.ttf?t=1484874598852') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_7xfbg1ri4tpgb9.svg?t=1484874598852#iconfont') format('svg'); /* iOS 4.1- */
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 }
 
 .iconfont {
@@ -81,7 +72,6 @@ a:hover {
     font-family: iconfont!important
 }
 
-<<<<<<< HEAD
 .left-col {
     position: fixed;
     width: 20%;
@@ -89,52 +79,6 @@ a:hover {
     background-color: #3472bd;
     background-size: cover;
     background-position-x: 66%;
-=======
-.icon-wechat:before { content: "\e675"; }
-
-.icon-rss:before { content: "\e600"; }
-
-.icon-instagram:before { content: "\e616"; }
-
-.icon-facebook:before { content: "\e63c"; }
-
-.icon-linkedin:before { content: "\e64d"; }
-
-.icon-twitter:before { content: "\e6a4"; }
-
-.icon-aboutus:before { content: "\e601"; }
-
-.icon-zhihu:before { content: "\e609"; }
-
-.icon-weibo:before { content: "\e64c"; }
-
-.icon-google:before { content: "\e6b7"; }
-
-.icon-music:before { content: "\e612"; }
-
-.icon-collect:before { content: "\e603"; }
-
-.icon-home:before { content: "\e604"; }
-
-.icon-https:before { content: "\e6cb"; }
-
-.icon-liuyan:before { content: "\e693"; }
-
-.icon-sousuo:before { content: "\e605"; }
-
-.icon-links:before { content: "\e606"; }
-
-.icon-github:before { content: "\ee80"; }
-
-.icon-qq:before { content: "\e6f6"; }
-
-.left-col {
-    position: fixed;
-    width: 270px;
-    height: 100%;
-    background-color: #1fa4b5;
-    background-size: cover;
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     background-image: url(images/left-bg.jpg);
     text-align: center
 }
@@ -143,7 +87,6 @@ a:hover {
     position: absolute;
     right: 0;
     left: 0;
-<<<<<<< HEAD
     margin-left: 20%;
     min-height: 100%;
     background: #fff;
@@ -152,14 +95,6 @@ a:hover {
 #header {
     display: inline-block;
     text-align: center;
-=======
-    margin-left: 270px;
-    min-height: 100%;
-    background: #fff
-}
-
-#header {
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     padding: 30px 0;
     width: 100%;
     height: auto;
@@ -186,11 +121,7 @@ a:hover {
 }
 
 #header a:hover {
-<<<<<<< HEAD
     color: #ccc224;
-=======
-    color: #2479cc;
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     text-decoration: none
 }
 
@@ -199,10 +130,7 @@ a:hover {
     margin: 10px auto 30px;
     width: 9pc;
     height: 9pc;
-<<<<<<< HEAD
     border: #eeeff0 5px solid;
-=======
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     border-radius: 50%;
     background-size: 100% 100%
 }
@@ -308,21 +236,13 @@ a:hover {
 
 .container {
     position: relative;
-<<<<<<< HEAD
     vertical-align: middle;
     max-width: 100%;
-=======
-    max-width: 100pc;
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     min-height: 100%
 }
 
 .mid-col .mid-col-container {
-<<<<<<< HEAD
     padding: 0 40px 0 40px
-=======
-    padding: 0 70px 0 40px
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 }
 
 
@@ -357,16 +277,10 @@ article .meta a {
 article h1.title {
     margin-bottom: 25px;
     color: #333;
-<<<<<<< HEAD
     font-weight: 900;
     font-size: 2em;
     line-height: 35px;
     font-family: "Times New Roman"
-=======
-    font-weight: 300;
-    font-size: 2em;
-    line-height: 35px
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 }
 
 article h1.title a {
@@ -759,11 +673,7 @@ article .entry-content video {
 
 .form-control {
     margin: 15px 0;
-<<<<<<< HEAD
     padding: 6px 0;
-=======
-    padding: 6px 9pt;
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     width: 100%;
     height: 34px;
     border: 1px solid #ccc;
@@ -815,11 +725,7 @@ textarea.form-control {
 }
 
 #footer {
-<<<<<<< HEAD
     padding: 15px 40px;
-=======
-    padding: 15px 70px 15px 40px;
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     width: auto;
     border-top: 1px solid #fff;
     text-align: center;
@@ -872,10 +778,6 @@ textarea.form-control {
         margin: 0 10px;
         text-align: center
     }
-<<<<<<< HEAD
-=======
-    #header .profilepic a,
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     #main-nav ul li a i {
         display: none
     }
@@ -884,10 +786,7 @@ textarea.form-control {
         margin-bottom: 0
     }
     article {
-<<<<<<< HEAD
         margin: auto 8%;
-=======
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
         padding: 20px 0
     }
     .left-col {
@@ -896,11 +795,7 @@ textarea.form-control {
         height: 100%;
         background-color: #1fa4b5;
         background-size: cover;
-<<<<<<< HEAD
         background-position: center
-=======
-        background-position: center -55%
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     }
     #header .subtitle {
         margin: 5px 0;
@@ -912,13 +807,7 @@ textarea.form-control {
         width: 100%
     }
     article .meta {
-<<<<<<< HEAD
         display: none
-=======
-        position: static;
-        margin-bottom: 10px;
-        width: auto
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
     }
     .mid-col .mid-col-container {
         padding: 0 10px
@@ -943,7 +832,6 @@ textarea.form-control {
     #sub-nav .social a {
         opacity: 1
     }
-<<<<<<< HEAD
     .page-navi .prev{
         float: none;
         position: relative;
@@ -954,8 +842,6 @@ textarea.form-control {
         position: relative;
         left: 72%
     }
-=======
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 }
 
 code[class*=language-],

@@ -26,11 +26,7 @@ $this->need('header.php');
 				</div>
 				<h1 class="title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
 				<div class="entry-content">
-<<<<<<< HEAD
 					<p><?php $this->excerpt(27);?></p>
-=======
-					<p><?php $this->excerpt(200);?></p>
->>>>>>> eadc892adeb7ec1612f2a20f51fd0a3a5450ea62
 					<p><a href="<?php $this->permalink() ?>" class="more-link">继续阅读 »</a></p>
 				</div>
             </article>
