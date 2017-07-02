@@ -107,7 +107,8 @@ a:hover {
 
 #header .subtitle {
     margin: 5px 0;
-    color: #ccc
+    color: #ccc;
+    text-shadow: 0 1px #666
 }
 
 #header a:hover {
@@ -218,10 +219,6 @@ a:hover {
     height: 40px;
     font-size: 1pc;
     line-height: 40px
-}
-
-#header .subtitle {
-    color: #ccc
 }
 
 .container {
@@ -786,10 +783,6 @@ textarea.form-control {
         background-color: #1fa4b5;
         background-size: cover;
         background-position: center
-    }
-    #header .subtitle {
-        margin: 5px 0;
-        color: #fff
     }
     .mid-col {
         float: none;
