@@ -9,7 +9,7 @@
 <meta http-equiv="Cache-Control" content="no-transform"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
 <meta name="keywords" content="<?php $this->keywords() ?>" />
-<script src="//at.alicdn.com/t/font_yyy0obdoyuzhncdi.js"></script>
+<script src="//at.alicdn.com/t/font_0l099gu8m5nrk9.js"></script>
 <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
 <!--[if lt IE 9]>
 	<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
@@ -40,6 +40,7 @@
                    <li><a href="<?php $this->options->siteUrl(); ?>music">音乐盒(仮)</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>archives">归档</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>about">关于</a></li>
+                   <li><a href="<?php $this->options->siteUrl(); ?>link">友链(仮)</a></li>
                 </ul>
             </nav>
             <nav id="sub-nav">
@@ -51,6 +52,7 @@
                     <a class="social google-plus" target="blank" href="<?php $this->options->socialgoogle(); ?>"><i class="iconfont icon-google"></i></a>
                     <?php endif; ?>
                     <a class="social rss" target="blank" href="<?php $this->options->siteUrl(); ?>feed/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mes-rss"></use></svg></a>
+                    <a class="social niconico" target="blank" href="http://www.nicovideo.jp/mylist/35792174"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-niconico"></use></svg></a>
                     <?php if ($this->options->socialtwitter): ?>
                     <a class="social twitter" target="blank" href="<?php $this->options->socialtwitter(); ?>"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-icon_twitter"></use></svg></a>
                     <?php endif; ?>

@@ -12,17 +12,12 @@
 				<article class="post post-archives">
 					<h1 class="title"><?php $this->title() ?></h1>
 					<div class="entry-content">	
-                    	<?php $all = Typecho_Plugin::export();?>
-                        <?php if (array_key_exists('Links', $all['activated'])) : ?>
-                            <ul>
-                            <?php Links_Plugin::output('SHOW_TEXT'); ?>
-                            </ul>                       
-                            <?php else : ?>
-                            <ul>
-                            <!-- 不带 Https 图标需要删除 <i class="iconfont icon-https"></i>  -->
-					           <li><i class="iconfont icon-https"></i><a href="https://uefeng.com/" target="_blank">有意</a><span class="more">（IT 民工的折腾记录）</span></li>
-                            </ul>
-				        <?php endif; ?> 
+                            <div id="linkwrapper">
+                            <span>部署了 HTTPS 的小伙伴们会按照申请顺序优先放在前排！<span><span style="background: #5d686f">オフ会：0人</span><br>
+                            <?php Links_Plugin::output('SHOW_HTTPS', 0, 'https'); ?>
+                            <?php Links_Plugin::output('SHOW_MIX', 0, 'http'); ?>
+                            <p>欢迎各位到“关于”页面留言申请！</p>
+                            </div>                       
 					</div>
 				</article>
 			</div>

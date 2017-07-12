@@ -55,6 +55,13 @@ a:hover {
     overflow: hidden;
 }
 
+.https {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
 .iconfont {
     vertical-align: sub;
     font-style: normal;
@@ -191,6 +198,7 @@ a:hover {
 
 
 #main-nav {
+    float: none;
     margin-left: 0
 }
 
@@ -198,10 +206,8 @@ a:hover {
     margin-right: .6rem
 }
 
-#main-nav,
 #sub-nav {
-    float: none;
-    margin-top: 15px
+    margin: 15px auto
 }
 
 #sub-nav .iconfont {
@@ -413,6 +419,7 @@ article .entry-content {
     word-wrap: break-word;
     font-size: 1pc;
     line-height: 1.8;
+    text-align: justify;
     -webkit-font-smoothing: antialiased
 }
 
@@ -710,6 +717,21 @@ textarea.form-control {
     border-color: #2479cc;
     color: #2479cc
 }
+#linkwrapper {
+    text-align: center;
+}
+
+.linkitem {
+    display: inline-block;
+    padding: 0 3%;
+}
+
+.linkimg {
+    margin: 10px auto;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
 
 #footer {
     padding: 15px 40px;
@@ -757,8 +779,9 @@ textarea.form-control {
     .form-control {
         width: 100%
     }
-    #main-nav {
-        margin-top: 10px
+    #main-nav,
+    #sub-nav {
+        margin-bottom: 15px
     }
     #main-nav ul li {
         display: inline;
@@ -815,6 +838,9 @@ textarea.form-control {
     #sub-nav .social a {
         opacity: 1
     }
+.linkitem {
+    padding: 0 9%;
+}
 }
 
 code[class*=language-],
