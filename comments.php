@@ -1,5 +1,6 @@
 <?php
 $GLOBALS['z']  = $this->options->CDNURL;
+$siteKey = '6Le8yigUAAAAANf5EpB5kLb49-ZHcGpKw_w1HbaS';
 function threadedComments($comments, $options) {
     $commentClass = '';
     if ($comments->authorId) {
@@ -27,6 +28,7 @@ if ($comments->levels > 0) {
 $comments->alt(' comment-odd', ' comment-even');
 echo $commentClass;
 ?>">
+
     <div id="<?php $comments->theId(); ?>">
         <?php
             $host = '//cdn.v2ex.com';
@@ -94,7 +96,11 @@ echo $commentClass;
                 <?php endif; ?>
 				
             <textarea name="text" id="textarea" class="form-control" onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('misubmit').click();return false};" placeholder="<?php _e('　在这里输入你的评论(Ctrl/Cmd+Enter也可以提交)...'); ?>" required ><?php $this->remember('text',false); ?></textarea>
-            <button type="submit" class="submit" id="misubmit"><?php _e('提交评论'); ?></button>
+            <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div>
+            <script type="text/javascript"
+                    src="https://www.google.com/recaptcha/api.js?hl=zh-CN">
+            </script>
+            <button type="submit" class="submit" id="misubmit" value="Submit"><?php _e('提交评论'); ?></button>
             <?php $security = $this->widget('Widget_Security'); ?>
             <input type="hidden" name="_" value="<?php echo $security->getToken($this->request->getReferer())?>">
         </form>
@@ -103,6 +109,7 @@ echo $commentClass;
     <?php else: ?>
     <h4 class="comment-close">此处评论已关闭</h4>
     <?php endif; ?>  
+
 <script>
 function showhidediv(id){  
 var sbtitle=document.getElementById(id);  

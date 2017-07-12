@@ -10,6 +10,13 @@
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
 <meta name="keywords" content="<?php $this->keywords() ?>" />
 <script src="//at.alicdn.com/t/font_0l099gu8m5nrk9.js"></script>
+<script type="text/javascript">
+  var onloadCallback = function() {
+    grecaptcha.render('comment_key', {
+      'sitekey' : '6Le8yigUAAAAANf5EpB5kLb49-ZHcGpKw_w1HbaS'
+    });
+  };
+</script>
 <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
 <!--[if lt IE 9]>
 	<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>

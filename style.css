@@ -777,7 +777,8 @@ textarea.form-control {
         margin-top: 0
     }
     .form-control {
-        width: 100%
+        margin: 10px auto;
+        width: 90%
     }
     #main-nav,
     #sub-nav {
@@ -831,6 +832,10 @@ textarea.form-control {
     }
     article .meta .date {
         margin-right: 30px
+    }
+    .g-recaptcha {
+        margin: 15px auto;
+        width: 304px;
     }
     #footer {
         padding: 15px 10px
