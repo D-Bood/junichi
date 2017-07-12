@@ -1,13 +1,13 @@
-###更新（2017年2月27日）
+### 更新（2017年2月27日）
 
 - 修正友链页默认链接字体变大的问题
 
-###更新（2017年1月20日）
+### 更新（2017年1月20日）
 
 - iconfont库 增加了新图标
 - 修复搜索框文字光标方向错误（ 感谢 @FaithPatrick 提交 ）
 
-###更新（2017年1月19日）
+### 更新（2017年1月19日）
 
 - 增加对 Hanny 友链插件的支持(不喜欢插件的依然是直接编辑源文件来修改友链)
 - 修正某些小bug
@@ -35,7 +35,7 @@ $pattern = "<li><a href=\"{url}\" target=\"_blank\">{name}</a><span class=\"more
 ```
 3、添加友链的时候 若是 https 的链接添加链接分类为 https，否则链接分类为 http。
 
-###更新（2017年1月16日）
+### 更新（2017年1月16日）
 
 根据网友要求更新一些细节，例如
 
@@ -60,7 +60,7 @@ https://github.com/siseboy/junichi
 
 ![image](https://oh34w4h6l.qnssl.com/screenshot.jpg?imageView3)
 
-###主题特性
+### 主题特性
 
  - 无jQuery，无前端框架，轻量级
  - InstantClick实现PJAX无刷新操作
@@ -69,11 +69,11 @@ https://github.com/siseboy/junichi
  - 支持图片CDN
  - 支持社交按钮
 
-###主题启用
+### 主题启用
 
 下载后，重命名文件夹为junichi，然后放到typecho里的theme目录内，进入typecho后台，外观，启用即可。
 
-###主题设置
+### 主题设置
 
 进入主题外观设置
 
