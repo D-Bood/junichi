@@ -10,19 +10,12 @@
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
 <meta name="keywords" content="<?php $this->keywords() ?>" />
 <script src="//at.alicdn.com/t/font_0l099gu8m5nrk9.js"></script>
-<script type="text/javascript">
-  var onloadCallback = function() {
-    grecaptcha.render('comment_key', {
-      'sitekey' : '6Le8yigUAAAAANf5EpB5kLb49-ZHcGpKw_w1HbaS'
-    });
-  };
-</script>
 <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
 <!--[if lt IE 9]>
 	<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
 	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-<link rel="shortcut icon" href="<?php if($this->options->favicon): $this->options->favicon(); else: $this->options->themeUrl('images/touxiang.png');endif; ?>">
+<link rel="shortcut icon" href="<?php if($this->options->favicon): $this->options->favicon(); else: $this->options->themeUrl('images/touxiang.png'); endif; ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css?v=170120'); ?>">
 <title><?php $this->archiveTitle(array(
 	'category'  =>  _t(' %s '),
@@ -36,18 +29,18 @@
 	<div class="browsehappy" role="dialog">你正在使用一个过时的浏览器，为了正常的访问, 请<a href="http://browsehappy.com/" target="_blank">升级你的浏览器</a>以查看此页面。</div>
 <![endif]-->
 <div class="container">
-    <div class="left-col" style="background-image: url(<?php if($this->options->iosicon): $this->options->iosicon(); else: $this->options->themeUrl('images/left-bg.jpg');endif; ?>);">
+    <div class="left-col" style="background: #404040 <?php if($this->options->iosicon): echo 'url('.$this->options->iosicon.')'; endif; ?>; background-size: cover">
         <header id="header">
-            <div class="profilepic"><a href="/" style="background-image: url(<?php if($this->options->touxiang): $this->options->touxiang(); else: $this->options->themeUrl('images/touxiang.jpg');endif; ?>);"></a></div>
+            <div class="profilepic"><a href="/" style="background-image: url(<?php if($this->options->touxiang): $this->options->touxiang(); else: $this->options->themeUrl('images/touxiang.png');endif; ?>);"></a></div>
+            <div id="navi">
             <h1><a href="/"><?php $this->options->title() ?></a></h1>
             <p class="subtitle"><?php $this->options->slogan(); ?></p>
             <nav id="main-nav">
                 <ul>
                    <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
-                   <li><a href="<?php $this->options->siteUrl(); ?>music">音乐盒(仮)</a></li>
-                   <li><a href="<?php $this->options->siteUrl(); ?>archives">归档</a></li>
+                   <li><a href="<?php $this->options->siteUrl(); ?>music">音乐</a></li>
+                   <li><a href="<?php $this->options->siteUrl(); ?>archive">归档</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>about">关于</a></li>
-                   <li><a href="<?php $this->options->siteUrl(); ?>link">友链(仮)</a></li>
                 </ul>
             </nav>
             <nav id="sub-nav">
@@ -84,5 +77,6 @@
                     </div>
                 </div>
             </nav>
-        </header>
-    </div>
+            </div>
+</header>
+</div>

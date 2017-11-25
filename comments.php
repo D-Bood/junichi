@@ -1,6 +1,5 @@
 <?php
 $GLOBALS['z']  = $this->options->CDNURL;
-$siteKey = '6Le8yigUAAAAANf5EpB5kLb49-ZHcGpKw_w1HbaS';
 function threadedComments($comments, $options) {
     $commentClass = '';
     if ($comments->authorId) {
@@ -77,11 +76,11 @@ echo $commentClass;
         <div class="cancel-comment-reply"><span class="response"><?php _e('发表新评论 (*项为必填内容)'); ?></span><span class="cancel-reply"><?php $comments->cancelReply(); ?></span></div>
         <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
             <?php if($this->user->hasLogin()): ?>
-            <p style="padding-top:10px;"><?php _e('已登入: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
+            <p class="userstatus" style="padding-top:10px"><?php _e('已登入: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
                 <?php if($this->remember('author',true) != "" && $this->remember('mail',true) != "") : ?> 
                 
-                <p style="padding-top:10px;color:#aaa;">
+                <p class="userstatus" style="padding-top:10px;color:#aaa;">
                     <span onClick='showhidediv("author_info")'; style="cursor:pointer;color:#2479cc;"><?php $this->remember('author'); ?></span>，<?php _e('欢迎回来'); ?> 
                     <span id="cancel-comment-reply"><?php $comments->cancelReply(); ?></span>
                 </p>
@@ -89,17 +88,14 @@ echo $commentClass;
                 <?php else : ?>
                 <div id="author_info">
                 <?php endif ; ?>
-            <input type="text" name="author" maxlength="12" id="author" class="form-control" placeholder="<?php _e('　称呼 *'); ?>" value="<?php $this->remember('author'); ?>">
-            <input type="email" name="mail" id="mail" class="form-control" placeholder="<?php _e('　电子邮箱 *'); ?>" value="<?php $this->remember('mail'); ?>">
-            <input type="url" name="url" id="url" class="form-control" placeholder="<?php _e('　网址(http://)'); ?>" value="<?php $this->remember('url'); ?>">
+            <input type="text" name="author" maxlength="12" id="author" class="form-control" placeholder="<?php _e('称呼 *'); ?>" value="<?php $this->remember('author'); ?>">
+            <input type="email" name="mail" id="mail" class="form-control" placeholder="<?php _e('电子邮箱 *'); ?>" value="<?php $this->remember('mail'); ?>">
+            <input type="url" name="url" id="url" class="form-control" placeholder="<?php _e('网址(http://)'); ?>" value="<?php $this->remember('url'); ?>">
                </div>
                 <?php endif; ?>
 				
-            <textarea name="text" id="textarea" class="form-control" onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('misubmit').click();return false};" placeholder="<?php _e('　在这里输入你的评论(Ctrl/Cmd+Enter也可以提交)...'); ?>" required ><?php $this->remember('text',false); ?></textarea>
-            <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div>
-            <script type="text/javascript"
-                    src="https://www.google.com/recaptcha/api.js?hl=zh-CN">
-            </script>
+            <textarea name="text" id="textarea" class="form-control" onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('misubmit').click();return false};" placeholder="<?php _e("在这里输入你的评论(Ctrl/Cmd+Enter也可以提交)...\n\n注意：本站采用 reCAPTCHA 作为验证码。\n如果无法正常显示，请...你懂的"); ?>" required ><?php $this->remember('text',false); ?></textarea>
+            <?php reCAPTCHA_Plugin::output(); ?>
             <button type="submit" class="submit" id="misubmit" value="Submit"><?php _e('提交评论'); ?></button>
             <?php $security = $this->widget('Widget_Security'); ?>
             <input type="hidden" name="_" value="<?php echo $security->getToken($this->request->getReferer())?>">

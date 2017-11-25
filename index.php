@@ -15,7 +15,7 @@ $this->need('header.php');
 	<div class="mid-col">
 		<div class="mid-col-container">
         <?php while($this->next()): ?>
-            <article class="post post-list">
+            <article class="post-list">
                 <div class="meta">
                     <div class="date">
 						<time><?php $this->date('M j, Y'); ?></time>
@@ -26,8 +26,8 @@ $this->need('header.php');
 				</div>
 				<h1 class="title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
 				<div class="entry-content">
-					<p><?php $this->excerpt(27);?></p>
-					<p><a href="<?php $this->permalink() ?>" class="more-link">继续阅读 »</a></p>
+					<p><?php if (array_key_exists('zhaiyao',unserialize($this->___fields()))): ?><?php $this->fields->zhaiyao(); ?><?php else: ?><?php $this->excerpt(25); ?><?php endif; ?></p>
+				<p><a href="<?php $this->permalink() ?>" class="more-link">继续阅读 »</a></p>
 				</div>
             </article>
         <?php endwhile; ?>

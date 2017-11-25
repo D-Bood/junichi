@@ -1,8 +1,5 @@
-		<footer id="footer" class="inner">
-			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动 Theme is <a href="https://github.com/siseboy/junichi" target="_blank">Junichi</a>
-		</footer>
-	</div>
-</div>
+<footer id="footer" class="inner">&copy; 2013-<?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> with <a href="http://www.typecho.org" target="_blank">Typecho</a> Theme: <a href="https://github.com/siseboy/junichi" target="_blank">Junichi</a><br>Your IP: <?php echo $_SERVER["REMOTE_ADDR"]; ?></footer>
+
 <?php $this->footer(); ?>
 
 <script src="<?php $this->options->themeUrl('js/functions.js'); ?>"></script>

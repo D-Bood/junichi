@@ -11,7 +11,7 @@
 				<article class="post post-archives">
 					<h1 class="title"><?php $this->title() ?></h1>
 					<div class="entry-content">				
-						<?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=10000')->to($archives);
+						<?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=100')->to($archives);
 								$year=0; $mon=0; $i=0; $j=0;
 								while($archives->next()):
 								$year_tmp = date('Y',$archives->created);
@@ -36,5 +36,4 @@
 					</div>
 				</article>
 		</div>
-
 <?php $this->need('footer.php'); ?>

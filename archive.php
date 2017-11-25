@@ -24,12 +24,10 @@ $this->need('header.php');
 				</div>
 				<h1 class="title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
 				<div class="entry-content">
-					<p><?php $this->excerpt(200);?></p>
+					<p><?php if (isset($this->fields->zhaiyao)): ?><?php $this->fields->zhaiyao(); ?><?php endif; ?></p>
 					<p><a href="<?php $this->permalink() ?>" class="more-link">继续阅读 »</a></p>
 				</div>
 				</article>
 				<?php endwhile; ?>
 				<?php $this->pageLink('<nav class="page-navi"><i class="icon icon-left"></i> 上一页','prev');?><?php $this->pageLink('下一页 <i class="icon icon-right"></i></nav>','next');?>
 		</div>
-
-<?php $this->need('footer.php'); ?>

@@ -16,12 +16,11 @@
                             <span>部署了 HTTPS 的小伙伴们会按照申请顺序优先放在前排！<span><span style="background: #5d686f">オフ会：0人</span><br>
                             <?php Links_Plugin::output('SHOW_HTTPS', 0, 'https'); ?>
                             <?php Links_Plugin::output('SHOW_MIX', 0, 'http'); ?>
-                            <p>欢迎各位到“关于”页面留言申请！</p>
+                            <p>欢迎各位在本页面留言申请！</p>
                             </div>                       
 					</div>
 				</article>
+            <?php $this->need('comments.php'); ?>
 			</div>
 		</div>
-
-
 <?php $this->need('footer.php'); ?>

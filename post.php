@@ -14,18 +14,7 @@
 				<div class="entry-content" itemprop="articleBody">
 					<?php parseContent($this); ?>
 					<p class="post-info">
-						最后更新于&nbsp;<span class="date"><?php echo date('Y-m-d  H:i:s' , $this->modified); ?></span>&nbsp;，阅读数： <?php get_post_view($this) ?><br>本站采用 reCAPTCHA v2 作为验证码。请科学上网，谢谢！
-					</p>
-					<p>
-						<?php $this->related(5)->to($relatedPosts); ?>
-						<?php if (count($relatedPosts->stack)): ?>
-						<h3>相关文章</h3>
-						<ul>
-							<?php while ($relatedPosts->next()): ?>
-							<li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
-							<?php endwhile; ?>
-						</ul>
-						<?php endif; ?>					
+						最后更新于&nbsp;<span class="date"><?php echo date('Y-m-d  H:i:s' , $this->modified); ?></span>&nbsp;，阅读数： <?php get_post_view($this) ?>
 					</p>
 				</div>
 				</article>

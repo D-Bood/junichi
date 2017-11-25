@@ -73,10 +73,6 @@ a:hover {
     position: fixed;
     width: 20%;
     height: 100%;
-    background-color: #3472bd;
-    background-size: cover;
-    background-position-x: 66%;
-    background-image: url(images/left-bg.jpg);
     text-align: center
 }
 
@@ -86,7 +82,7 @@ a:hover {
     left: 0;
     margin-left: 20%;
     min-height: 100%;
-    background: #fff;
+    background: #f8f8f8;
 }
 
 #header {
@@ -130,7 +126,12 @@ a:hover {
     height: 9pc;
     border: #eeeff0 5px solid;
     border-radius: 50%;
-    background-size: 100% 100%
+    background-size: 100% 100%;
+    transition: border .3s
+}
+
+#header .profilepic a:hover {
+    border: #ccc224 5px solid
 }
 
 #search {
@@ -249,7 +250,6 @@ a:hover {
 article {
     position: relative;
     padding: 30px 0;
-    border-top: 1px solid #fff;
     border-bottom: 1px solid #ddd
 }
 
@@ -337,7 +337,8 @@ article code {
     background-color: #eee;
     vertical-align: middle;
     font-size: 80%;
-    font-family: Consolas, Monaco, Andale Mono, monospace
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    text-align: left
 }
 
 article pre {
@@ -411,11 +412,14 @@ article .expire-tips {
 article .post-info {
     padding-top: 15px;
     font-size: 14px;
-    border-top: 1px dotted #eee
+}
+
+article .post-list {
+    border-top: 1px solid #fff;
 }
 
 article .entry-content {
-    color: #5d686f;
+    color: #404040;
     word-wrap: break-word;
     font-size: 1pc;
     line-height: 1.8;
@@ -500,6 +504,12 @@ article .entry-content video {
     object-fit: fill
 }
 
+.coinhive-captcha,
+.g-recaptcha {
+    margin: 15px auto;
+    width: 302px;
+}
+
 .page-navi {
     position: relative;
     overflow: hidden;
@@ -511,11 +521,11 @@ article .entry-content video {
 }
 
 .page-navi .prev {
-    float: left
+    float: left;
 }
 
 .page-navi .next {
-    float: right
+    float: right;
 }
 
 .page-navi .center {
@@ -532,13 +542,19 @@ article .entry-content video {
 }
 
 #comments {
-    margin-top: 15px
+    padding-top: 15px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #fff;
 }
 
 #comments .page-navigator {
     float: inherit;
     margin: 1rem 0 0;
     text-align: center
+}
+
+.userstatus {
+    margin-left: 0.9rem
 }
 
 .page-navigator li {
@@ -629,6 +645,7 @@ article .entry-content video {
 
 .cancel-comment-reply,
 .comment-meta {
+    margin-left: 0;
     margin-top: 1rem;
     color: #aaa;
     font-size: .8rem
@@ -695,7 +712,7 @@ textarea.form-control {
 
 .submit {
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
     padding: 0 25px;
     height: 36px;
     border: 1px solid #ccc;
@@ -734,12 +751,12 @@ textarea.form-control {
 }
 
 #footer {
-    padding: 15px 40px;
-    width: auto;
-    border-top: 1px solid #fff;
     text-align: center;
-    font-size: .9em;
-    line-height: 2.2
+    font-size: 10px;
+    line-height: 2.2;
+    margin: 0 40px 0 40px;
+    border-top: 1px solid #fff;
+    padding: 16px 0;
 }
 
 @media screen and (max-width:1024px) {
@@ -747,13 +764,13 @@ textarea.form-control {
         padding-bottom: 15px
     }
     .form-control {
-        width: 95%
+        width: 100%
     }
     .left-col {
-        width: 210px
+        width: 25%
     }
     .mid-col {
-        margin-left: 210px
+        margin-left: 25%
     }
     .mid-col .mid-col-container {
         padding: 0 20px
@@ -767,7 +784,7 @@ textarea.form-control {
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:960px) {
     #header {
         margin-left: 0;
         padding: 20px 0;
@@ -775,10 +792,6 @@ textarea.form-control {
     }
     #header h1 {
         margin-top: 0
-    }
-    .form-control {
-        margin: 10px auto;
-        width: 90%
     }
     #main-nav,
     #sub-nav {
@@ -797,7 +810,7 @@ textarea.form-control {
         margin-bottom: 0
     }
     article {
-        margin: auto 8%;
+        margin: auto 5%;
         padding: 20px 0
     }
     .left-col {
@@ -833,19 +846,30 @@ textarea.form-control {
     article .meta .date {
         margin-right: 30px
     }
-    .g-recaptcha {
-        margin: 15px auto;
-        width: 304px;
-    }
     #footer {
-        padding: 15px 10px
+        border-top: 0;
+        padding: 15px 0;
+        margin: 0 5% 0 5%
     }
     #sub-nav .social a {
         opacity: 1
     }
-.linkitem {
-    padding: 0 9%;
-}
+    .linkitem {
+        padding: 0 9%;
+    }
+    .page-navi {
+        width: 90%;
+        margin: 0px 5%;
+    }
+    .page-navi .prev {
+        float:left;
+    }
+    .page-navi .next {
+        float:right;
+    }
+    #comments {
+        margin: 0 5%
+    }
 }
 
 code[class*=language-],

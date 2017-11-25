@@ -11,5 +11,4 @@
             </article>
             <?php $this->need('comments.php'); ?>
 		</div>
-    
 <?php $this->need('footer.php'); ?>
