@@ -1,5 +1,33 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!doctype html>
+<!--
+      y++++++++++++++++++dN        さマかキ　ぼぼあク
+      s::::::::::::::::::yN        さグわハ　くくしロ
+      y++++++++++++++++++hN        るロらダ　ららたマ
+      o/dyyyyyyyyyyyyyhd-yN        とのをが　はをのグ
+      o/d//++//////++/od-yN        　　　　　　　　ロ
+      o/d//sh//////do/od-yN        ではつこ　こめおが
+      o/d//sh//////do/od-yN        きりきこ　ろがひ　　
+      o/d//sh//////do/od-yN        しにやま　さけると
+      o/d//os//////y+/od-yN        すはぶで　れてすん
+     d+/hyyyyyyyyyyyyyyh-ss        る　っ　　る　ぎで
+   No:/ooooooooooooo:/ooo:/sN      　どてと　んふにく
+   y---::+++++++++++:oddd/-:yN     　く　ん　だっ　る
+ Ny------+++++++++++::+++:---dN    　がとで　　てと
+Ndo--ydy-ddo/dd/-/dd/oddd/---y N   　あんく　　くん
+ s:--/+/-//::++:-/hh/:///:---:yN   　るでる　　るで
+Nho:-+osooosssss/--------yo--:yN   　　く　　　　く
+ Nh+--:+dsssyss/:-------h+:--+hN   　　る　　　　る
+   Nyyyyd++/:-sssss:-/ssd+:::dN    　　ん　　　　ん
+      o-----+d`````osyddsh         　　だ　　　　だ
+      o-----/hss/---ohdh/hN
+      o---------/ooooo+--yN
+      o--------s+--------yN
+      s:------:yo:------:yN
+      s:----::dNNy:-----:yN
+      s///////dNNh///////hN
+      NNNNNNNNN NNNNNNNNNNN
+-->
 <html>
 <head>
 <meta charset="<?php $this->options->charset(); ?>">
